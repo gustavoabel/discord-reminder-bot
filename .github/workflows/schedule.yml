@@ -2,8 +2,11 @@ name: Daily Discord Bot Run
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "30 20 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   run-bot:
@@ -25,6 +28,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-          SCHEDULE_HOUR: 17
-          TIMEZONE: America/Sao_Paulo
         run: yarn ts-node src/index.ts
