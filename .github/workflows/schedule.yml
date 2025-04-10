@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "30 20 * * *"
   workflow_dispatch:
-
+# permissions to allow the workflow to read the contents of the repository
 permissions:
   contents: read
 
