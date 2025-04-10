@@ -2,7 +2,7 @@ name: Daily Discord Bot Run
 
 on:
   schedule:
-    - cron: "30 20 * * *"
+    - cron: "0 20 * * *"
   workflow_dispatch:
 # permissions to allow the workflow to read the contents of the repository
 permissions:
