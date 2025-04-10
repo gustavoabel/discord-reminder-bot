@@ -1,0 +1,16 @@
+name: Test Daily Cron Trigger
+
+on:
+  schedule:
+    - cron: "37 20 * * *" # 17:37 BRT
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Just log the time
+        run: echo "✅ Cron test rodando às $(date)"
