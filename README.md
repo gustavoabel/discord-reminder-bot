@@ -1,16 +1,18 @@
-# Mobile Bot 🤖
+# Discord Reminder Bot 🤖
 
-A Discord bot designed to send automated reminders for time tracking entries.
+A Discord bot designed to send automated reminders in your Discord channels.
 
 ## Description
 
-This bot is built to help teams stay on top of their time tracking by sending automated reminders in a specified Discord channel. It uses Discord.js to interact with the Discord API and runs on a Node.js environment.
+This bot is built to help teams stay on top of their tasks by sending automated reminders in a specified Discord channel. It uses Discord.js to interact with the Discord API and runs on a Node.js environment.
 
 ## Features
 
 - Automated reminder messages
 - Discord channel integration
 - Simple and efficient design
+- Customizable message content
+- Easy to configure
 
 ## Tech Stack
 
@@ -47,6 +49,7 @@ yarn install
 ```
 TOKEN=your_discord_bot_token
 CHANNEL_ID=your_discord_channel_id
+MESSAGE=your_custom_message # Optional - defaults to a reminder message
 ```
 
 ## Usage
@@ -66,7 +69,7 @@ The bot will:
 ## Project Structure
 
 ```
-mobile-bot/
+discord-reminder-bot/
 ├── src/
 │   └── index.ts        # Main bot implementation
 ├── .env                # Environment variables
