@@ -2,19 +2,19 @@
 
 A Discord bot designed to send automated reminders in your Discord channels.
 
-## Description
+## 📝 Description
 
 This bot is built to help teams stay on top of their tasks by sending automated reminders in a specified Discord channel. It uses Discord.js to interact with the Discord API and runs on a Node.js environment.
 
-## Features
+## ✨ Features
 
-- Automated reminder messages
-- Discord channel integration
-- Simple and efficient design
-- Customizable message content
-- Easy to configure
+- 🔔 Automated reminder messages
+- 💬 Discord channel integration
+- 🚀 Simple and efficient design
+- 🎨 Customizable message content
+- ⚙️ Easy to configure
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Node.js** - Runtime environment
 - **TypeScript** - Programming language
@@ -23,14 +23,14 @@ This bot is built to help teams stay on top of their tasks by sending automated 
 - **moment-timezone** - Date and time handling
 - **node-cron** - Task scheduling
 
-## Prerequisites
+## 📋 Prerequisites
 
 - Node.js (v14 or higher)
 - Yarn package manager
 - Discord Bot Token
 - Discord Channel ID
 
-## Installation
+## 🚀 Installation
 
 1. Clone the repository:
 
@@ -52,7 +52,7 @@ CHANNEL_ID=your_discord_channel_id
 MESSAGE=your_custom_message # Optional - defaults to a reminder message
 ```
 
-## Usage
+## 💻 Usage
 
 1. Start the bot:
 
@@ -66,7 +66,7 @@ The bot will:
 - Send a reminder message to the specified channel
 - Automatically disconnect after sending the message
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 discord-reminder-bot/
@@ -78,7 +78,7 @@ discord-reminder-bot/
 └── yarn.lock           # Dependency lock file
 ```
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -86,14 +86,14 @@ discord-reminder-bot/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is licensed under the ISC License.
 
-## Author
+## 👨‍💻 Author
 
 Gustavo Abel
 
 ---
 
-Made with ❤️ Gustavo Abel
+Made with ❤️ by Gustavo Abel
