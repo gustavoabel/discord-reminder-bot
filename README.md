@@ -49,7 +49,7 @@ yarn install
 ```
 TOKEN=your_discord_bot_token
 CHANNEL_ID=your_discord_channel_id
-MESSAGE=your_custom_message # Optional - defaults to a reminder message
+MESSAGE=your_custom_message
 ```
 
 ## 💻 Usage
@@ -65,6 +65,26 @@ The bot will:
 - Connect to Discord
 - Send a reminder message to the specified channel
 - Automatically disconnect after sending the message
+
+## 🔧 Configuration
+
+### Local Development
+
+Configure your environment variables in the `.env` file:
+
+```
+TOKEN=your_discord_bot_token
+CHANNEL_ID=your_discord_channel_id
+MESSAGE=your_custom_message
+```
+
+### GitHub Actions
+
+To configure the bot in GitHub Actions, add the following secrets in your repository settings:
+
+- `TOKEN`: Your Discord bot token
+- `CHANNEL_ID`: Your Discord channel ID
+- `MESSAGE`: Your custom message
 
 ## 📁 Project Structure
 
