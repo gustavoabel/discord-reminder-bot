@@ -28,4 +28,5 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          MESSAGE: ${{ secrets.MESSAGE }}
         run: yarn ts-node src/index.ts
