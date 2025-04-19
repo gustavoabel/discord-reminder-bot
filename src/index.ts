@@ -10,17 +10,22 @@ const client = new Client({
 });
 
 client.once('ready', async () => {
-  console.log(`🤖 Bot online como ${client.user?.tag}`);
+  console.log(`🤖 Bot online as ${client.user?.tag}`);
 
   const channelId = process.env.CHANNEL_ID;
-  const message = process.env.MESSAGE || '🚨 Não se esqueçam de realizar os apontamentos!!!';
+  const message = process.env.MESSAGE;
   const channel = await client.channels.fetch(channelId!);
+
+  if (!message) {
+    console.error('❌ MESSAGE variable is not defined in .env file');
+    process.exit(1);
+  }
 
   if (channel && channel.isTextBased()) {
     await (channel as TextChannel).send(message);
-    console.log('✅ Mensagem enviada!');
+    console.log('✅ Message sent!');
   } else {
-    console.log('❌ Canal não encontrado ou não é de texto.');
+    console.log('❌ Channel not found or not a text channel.');
   }
 
   client.destroy();
