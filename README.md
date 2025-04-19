@@ -13,6 +13,7 @@ This bot is built to help teams stay on top of their tasks by sending automated 
 - 🚀 Simple and efficient design
 - 🎨 Customizable message content
 - ⚙️ Easy to configure
+- ⏰ Flexible scheduling
 
 ## 🛠️ Tech Stack
 
@@ -50,6 +51,7 @@ yarn install
 TOKEN=your_discord_bot_token
 CHANNEL_ID=your_discord_channel_id
 MESSAGE=your_custom_message
+SCHEDULE_HOUR=17 # 24-hour format
 ```
 
 ## 💻 Usage
@@ -76,6 +78,7 @@ Configure your environment variables in the `.env` file:
 TOKEN=your_discord_bot_token
 CHANNEL_ID=your_discord_channel_id
 MESSAGE=your_custom_message
+SCHEDULE_HOUR=17 # 24-hour format
 ```
 
 ### GitHub Actions
@@ -85,6 +88,7 @@ To configure the bot in GitHub Actions, add the following secrets in your reposi
 - `TOKEN`: Your Discord bot token
 - `CHANNEL_ID`: Your Discord channel ID
 - `MESSAGE`: Your custom message
+- `SCHEDULE_HOUR`: The hour when the reminder should be sent (24-hour format)
 
 ## 📁 Project Structure
 

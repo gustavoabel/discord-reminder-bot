@@ -2,7 +2,7 @@ name: Discord Reminder Bot
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "0 ${{ secrets.SCHEDULE_HOUR }} * * *"
   workflow_dispatch:
 # permissions to allow the workflow to read the contents of the repository
 permissions:
@@ -29,4 +29,5 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           MESSAGE: ${{ secrets.MESSAGE }}
+          SCHEDULE_HOUR: ${{ secrets.SCHEDULE_HOUR }}
         run: yarn ts-node src/index.ts
