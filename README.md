@@ -45,15 +45,6 @@ git clone [repository-url]
 yarn install
 ```
 
-3. Create a `.env` file in the root directory with the following variables:
-
-```
-TOKEN=your_discord_bot_token
-CHANNEL_ID=your_discord_channel_id
-MESSAGE=your_custom_message
-SCHEDULE_HOUR=17 # 24-hour format
-```
-
 ## 💻 Usage
 
 1. Start the bot:
