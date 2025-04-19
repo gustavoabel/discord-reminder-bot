@@ -1,4 +1,4 @@
-name: Daily Discord Bot Run
+name: Discord Reminder Bot
 
 on:
   schedule:
