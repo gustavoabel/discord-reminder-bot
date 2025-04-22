@@ -10,7 +10,6 @@ This bot is built to help teams stay on top of their tasks by sending automated 
 
 - 🔔 Automated reminder messages
 - 💬 Discord channel integration
-- 🚀 Simple and efficient design
 - 🎨 Customizable message content
 - ⚙️ Easy to configure
 - ⏰ Flexible scheduling
@@ -70,6 +69,7 @@ TOKEN=your_discord_bot_token
 CHANNEL_ID=your_discord_channel_id
 MESSAGE=your_custom_message
 SCHEDULE_HOUR=17 # 24-hour format
+TIMEZONE=your_timezone # ex:America/New_York
 ```
 
 ### GitHub Actions
