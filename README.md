@@ -69,7 +69,7 @@ TOKEN=your_discord_bot_token
 CHANNEL_ID=your_discord_channel_id
 MESSAGE=your_custom_message
 SCHEDULE_HOUR=17 # 24-hour format
-TIMEZONE=your_timezone # ex:America/New_York
+TIMEZONE=your_timezone # (e.g., America/Sao_Paulo, America/New_York)
 ```
 
 ### GitHub Actions
@@ -80,6 +80,7 @@ To configure the bot in GitHub Actions, add the following secrets in your reposi
 - `CHANNEL_ID`: Your Discord channel ID
 - `MESSAGE`: Your custom message
 - `SCHEDULE_HOUR`: The hour when the reminder should be sent (24-hour format)
+- `TIMEZONE`: The timezone in which the message should be scheduled (e.g., America/Sao_Paulo, America/New_York)
 
 ## 📁 Project Structure
 
