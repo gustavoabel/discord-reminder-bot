@@ -1,18 +1,16 @@
-# Discord Reminder Bot 🤖
+# Discord Reminder Daemon 🔔
 
-A Discord bot designed to send automated reminders in your Discord channels.
+Discord Reminder Daemon is a lightweight background client that logs in as a Discord bot and sends scheduled reminder messages to a specified channel. Designed for one-shot execution, it’s ideal for use with cron jobs, GitHub Actions, or any external scheduler.
 
-## 📝 Description
-
-This bot is built to help teams stay on top of their tasks by sending automated reminders in a specified Discord channel. It uses Discord.js to interact with the Discord API and runs on a Node.js environment.
+Built with Node.js and discord.js, this daemon ensures your team never misses a beat — without keeping the bot online full-time.
 
 ## ✨ Features
 
-- 🔔 Automated reminder messages
-- 💬 Discord channel integration
-- 🎨 Customizable message content
-- ⚙️ Easy to configure
-- ⏰ Flexible scheduling
+- 🔔 Sends automated reminder messages
+- 💬 Integrates with any Discord text channel
+- 🎨 Customizable message content via .env
+- ⚙️ Simple and environment-based configuration
+- ⏰ Works with any external scheduler (cron, GitHub Actions, Railway, etc.)
 
 ## 🛠️ Tech Stack
 
@@ -85,7 +83,7 @@ To configure the bot in GitHub Actions, add the following secrets in your reposi
 ## 📁 Project Structure
 
 ```
-discord-reminder-bot/
+discord-reminder-daemon/
 ├── src/
 │   └── index.ts        # Main bot implementation
 ├── .env                # Environment variables
@@ -108,7 +106,7 @@ This project is licensed under the ISC License.
 
 ## 👨‍💻 Author
 
-Gustavo Abel
+[Gustavo Abel](https://gustavoabel.dev)
 
 ---
 
